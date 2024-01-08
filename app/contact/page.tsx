@@ -5,7 +5,7 @@ const page = () => {
   return (
     <div className="page-bg h-[100vh]">
       <Navbar />
-      <h1 className="my-8 text-center text-[30px]">PRENÁJOM VOZIDIEL</h1>
+      <h1 className="my-8 text-center text-[30px]">Kontakt</h1>
     </div>
   );
 };

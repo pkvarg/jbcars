@@ -6,6 +6,8 @@
 
 body {
   font-family: 'Prompt', sans-serif;
+  color: azure;
+  font-weight: 100;
 }
 
 .hero {
@@ -15,4 +17,8 @@ body {
   background-position: center center;
   background-size: cover;
   width: 100%;
+}
+
+.page-bg {
+  background: linear-gradient(to top, #65382e, #372d4b);
 }

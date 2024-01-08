@@ -1,5 +1,6 @@
 'use client';
 import React, { useState } from 'react';
+import Link from 'next/link';
 
 const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
@@ -59,13 +60,29 @@ const Navbar = () => {
             >
               <ul className="justify-center space-y-8 text-[30px] md:flex md:space-x-6 md:space-y-0 lg:text-[25px]">
                 <li>
-                  <p className="cursor-pointer hover:text-red-600">Cat 01</p>
+                  <Link
+                    href={'/'}
+                    className="cursor-pointer hover:text-red-600"
+                  >
+                    Domov
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    href={'/about'}
+                    className="cursor-pointer hover:text-red-600"
+                  >
+                    O nás
+                  </Link>
                 </li>
                 <li>
-                  <p className="cursor-pointer hover:text-red-600">Cat 02</p>
-                </li>
-                <li>
-                  <p className="cursor-pointer hover:text-red-600">Cat 03</p>
+                  <Link
+                    href={'/contact'}
+                    className="cursor-pointer hover:text-red-600"
+                  >
+                    Kontakt
+                  </Link>
                 </li>
               </ul>
             </div>
