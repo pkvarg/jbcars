@@ -1,13 +1,13 @@
 'use client';
-import Image from 'next/image';
 import Navbar from './components/Navbar';
 import { useRouter } from 'next/navigation';
+import WhatsApp from './components/WhatsApp';
 
 export default function Home() {
   const router = useRouter();
 
   return (
-    <main className="hero h-[100vh] text-white lg:h-[100vh] ">
+    <main className="hero relative h-[100vh] text-white lg:h-[100vh] ">
       <Navbar />
       <div className="mx-4 flex transform flex-col   gap-4 text-[25px] font-thin uppercase lg:mx-[18%] lg:grid lg:translate-y-1/2 lg:grid-cols-3">
         <div
@@ -46,6 +46,9 @@ export default function Home() {
         >
           Predaj a výkup
         </div>
+      </div>
+      <div className="ml-[20%] mt-[17%] hidden lg:flex">
+        <WhatsApp />
       </div>
     </main>
   );

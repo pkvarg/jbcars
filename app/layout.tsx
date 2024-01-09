@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
+import { Toaster } from 'react-hot-toast';
 
 export const metadata: Metadata = {
   title: 'JB Cars',
@@ -41,7 +42,10 @@ export default function RootLayout({
         <meta property="fb:app_id" content="627076731624225" />
       </head> */}
 
-      <body>{children}</body>
+      <body>
+        <Toaster />
+        {children}
+      </body>
     </html>
   );
 }

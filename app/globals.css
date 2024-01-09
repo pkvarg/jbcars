@@ -8,6 +8,7 @@ body {
   font-family: 'Prompt', sans-serif;
   color: azure;
   font-weight: 100;
+  background: #000;
 }
 
 .hero {
@@ -21,4 +22,13 @@ body {
 
 .page-bg {
   background: linear-gradient(to top, #65382e, #372d4b);
+}
+
+.form-control {
+  display: none;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: white;
 }
