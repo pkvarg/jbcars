@@ -49,7 +49,7 @@ const WhatsApp = () => {
     }
   };
   return (
-    <div className="relative">
+    <div className="relative ml-[20%] mt-[17%]">
       <div className="flex flex-row items-center gap-2">
         <Image
           onClick={() => setShowForm((prev) => !prev)}
@@ -63,7 +63,7 @@ const WhatsApp = () => {
       {showForm && (
         <form
           onSubmit={whatsMessage}
-          className="-ml-12 mt-8 flex w-[100%] flex-col lg:absolute lg:-bottom-3 lg:right-[45%] lg:ml-0 lg:mt-0 lg:w-[40%] lg:flex-row"
+          className="bottom-0 left-[20%] -ml-12 mt-8 flex w-[100%] flex-col lg:absolute lg:w-[50%] lg:flex-row"
         >
           <div className="flex w-[100%] flex-col items-center gap-2">
             <input

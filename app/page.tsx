@@ -47,7 +47,7 @@ export default function Home() {
           Predaj a výkup
         </div>
       </div>
-      <div className="ml-[20%] mt-[17%] hidden lg:flex">
+      <div className="hidden lg:inline">
         <WhatsApp />
       </div>
     </main>
