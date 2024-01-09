@@ -39,8 +39,9 @@ const WhatsApp = () => {
         if (res.data === 'success') {
           toast.success('Správa bola odoslaná');
           setShowForm(false);
-          setText('');
+          setMessage('');
           setSender('');
+          setText('');
         }
       } catch (error: any) {
         console.log(error);
